@@ -1,0 +1,16 @@
+/* Error Message Styles */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Additional styles for form validation */
+input.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}

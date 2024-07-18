@@ -1,0 +1,65 @@
+/* Styles for the Line ID Component */
+
+/* General styles for the component container */
+.line-id-container {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+/* Styles for the input fields */
+.line-id-container input {
+  margin-bottom: 12px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Styles for the buttons */
+.line-id-container button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.line-id-container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Styles for error messages */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Styles for the LOV container */
+.lov-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+.lov-container div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.lov-container div:hover {
+  background-color: #f1f1f1;
+}

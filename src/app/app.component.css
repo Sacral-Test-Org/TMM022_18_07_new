@@ -1,0 +1,67 @@
+/* Root CSS styles for the Angular application */
+
+/* Maximize the main window */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Set the title of the main window */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for the SCREENNAME field */
+.screenname {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Style for the SYSDATE field */
+.sysdate {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Style for the MODE field */
+.mode {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Default cursor style */
+* {
+  cursor: default;
+}
+
+/* Disable the SAVE button */
+button.save {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Enable specific fields */
+input.group-id,
+input.partno,
+input.part-status,
+input.part-desc,
+input.line-id {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Enable the UNIT_ID field if disabled */
+input.unit-id:disabled {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/* Move cursor to the UNIT_ID field */
+input.unit-id:focus {
+  outline: 2px solid blue;
+}

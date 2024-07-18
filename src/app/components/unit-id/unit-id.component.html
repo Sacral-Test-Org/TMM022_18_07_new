@@ -1,0 +1,43 @@
+<div>
+  <form>
+    <div>
+      <label for="unitId">Unit ID:</label>
+      <input type="text" id="unitId" name="unitId" (dblclick)="onUnitIdDblClick()" (click)="onUnitIdClick()" (keydown.enter)="onUnitIdKeyDown()" (blur)="onUnitIdBlur()" />
+    </div>
+    <div>
+      <label for="unitName">Unit Name:</label>
+      <input type="text" id="unitName" name="unitName" />
+    </div>
+    <div>
+      <label for="groupId">Group ID:</label>
+      <input type="text" id="groupId" name="groupId" />
+    </div>
+    <div>
+      <label for="groupName">Group Name:</label>
+      <input type="text" id="groupName" name="groupName" />
+    </div>
+    <div>
+      <label for="lineId">Line ID:</label>
+      <input type="text" id="lineId" name="lineId" />
+    </div>
+    <div>
+      <label for="lineDesc">Line Description:</label>
+      <input type="text" id="lineDesc" name="lineDesc" />
+    </div>
+    <div>
+      <label for="partId">Part ID:</label>
+      <input type="text" id="partId" name="partId" />
+    </div>
+    <div>
+      <label for="partNo">Part Number:</label>
+      <input type="text" id="partNo" name="partNo" />
+    </div>
+    <div>
+      <label for="partDesc">Part Description:</label>
+      <input type="text" id="partDesc" name="partDesc" />
+    </div>
+    <div>
+      <button type="button" id="saveButton" [disabled]="isSaveDisabled">Save</button>
+    </div>
+  </form>
+</div>

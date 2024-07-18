@@ -1,0 +1,68 @@
+<div class="main-window">
+  <div class="part-master-window">
+    <h1>T K A P - [IS]</h1>
+    <form>
+      <div>
+        <label for="screenname">Screen Name:</label>
+        <input id="screenname" name="screenname" type="text" [(ngModel)]="screenName" readonly />
+      </div>
+      <div>
+        <label for="sysdate">Sysdate:</label>
+        <input id="sysdate" name="sysdate" type="text" [(ngModel)]="sysDate" readonly />
+      </div>
+      <div>
+        <label for="mode">Mode:</label>
+        <input id="mode" name="mode" type="text" [(ngModel)]="mode" readonly />
+      </div>
+      <div>
+        <label for="unit_id">Unit ID:</label>
+        <input id="unit_id" name="unit_id" type="text" [(ngModel)]="unitId" (dblclick)="onUnitIdDoubleClick()" (click)="onUnitIdClick()" />
+      </div>
+      <div>
+        <label for="unit_name">Unit Name:</label>
+        <input id="unit_name" name="unit_name" type="text" [(ngModel)]="unitName" />
+      </div>
+      <div>
+        <label for="group_id">Group ID:</label>
+        <input id="group_id" name="group_id" type="text" [(ngModel)]="groupId" (dblclick)="onGroupIdDoubleClick()" (click)="onGroupIdClick()" />
+      </div>
+      <div>
+        <label for="group_name">Group Name:</label>
+        <input id="group_name" name="group_name" type="text" [(ngModel)]="groupName" />
+      </div>
+      <div>
+        <label for="line_id">Line ID:</label>
+        <input id="line_id" name="line_id" type="text" [(ngModel)]="lineId" (dblclick)="onLineIdDoubleClick()" (click)="onLineIdClick()" />
+      </div>
+      <div>
+        <label for="line_desc">Line Description:</label>
+        <input id="line_desc" name="line_desc" type="text" [(ngModel)]="lineDesc" />
+      </div>
+      <div>
+        <label for="part_id">Part ID:</label>
+        <input id="part_id" name="part_id" type="text" [(ngModel)]="partId" />
+      </div>
+      <div>
+        <label for="partno">Part Number:</label>
+        <input id="partno" name="partno" type="text" [(ngModel)]="partNo" />
+      </div>
+      <div>
+        <label for="part_desc">Part Description:</label>
+        <input id="part_desc" name="part_desc" type="text" [(ngModel)]="partDesc" (click)="onPartDescClick()" (dblclick)="onPartDescDoubleClick()" />
+      </div>
+      <div>
+        <label for="part_status">Part Status:</label>
+        <input id="part_status" name="part_status" type="text" [(ngModel)]="partStatus" />
+      </div>
+      <div>
+        <button type="button" (click)="onSave()" [disabled]="!isSaveEnabled">Save</button>
+        <button type="button" (click)="onClear()">Clear</button>
+        <button type="button" (click)="onEdit()">Edit</button>
+        <button type="button" (click)="onExit()">Exit</button>
+      </div>
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+    </form>
+  </div>
+</div>

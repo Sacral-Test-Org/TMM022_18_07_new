@@ -1,0 +1,25 @@
+<div>
+  <!-- Group ID Field -->
+  <label for="groupId">Group ID:</label>
+  <input type="text" id="groupId" name="groupId" (dblclick)="onGroupIdDblClick()" (click)="onGroupIdClick()" [(ngModel)]="groupId" />
+
+  <!-- Group Name Field -->
+  <label for="groupName">Group Name:</label>
+  <input type="text" id="groupName" name="groupName" [(ngModel)]="groupName" />
+
+  <!-- LOV for Group ID -->
+  <div *ngIf="showGroupLov">
+    <label for="groupLov">Select Group ID:</label>
+    <select id="groupLov" name="groupLov" (change)="onGroupLovChange($event)">
+      <option *ngFor="let group of groupLovOptions" [value]="group.id">{{ group.name }}</option>
+    </select>
+  </div>
+
+  <!-- LOV for Edit Group ID -->
+  <div *ngIf="showEditGroupLov">
+    <label for="editGroupLov">Select Edit Group ID:</label>
+    <select id="editGroupLov" name="editGroupLov" (change)="onEditGroupLovChange($event)">
+      <option *ngFor="let group of editGroupLovOptions" [value]="group.id">{{ group.name }}</option>
+    </select>
+  </div>
+</div>

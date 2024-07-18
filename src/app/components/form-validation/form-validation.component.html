@@ -1,0 +1,49 @@
+<div *ngIf="errorMessage" class="error-message">
+  {{ errorMessage }}
+</div>
+
+<form [formGroup]="formGroup">
+  <div>
+    <label for="partStatus">Part Status</label>
+    <input id="partStatus" formControlName="partStatus" (change)="validatePartStatus()" />
+  </div>
+  <div>
+    <label for="unitId">Unit ID</label>
+    <input id="unitId" formControlName="unitId" />
+  </div>
+  <div>
+    <label for="unitName">Unit Name</label>
+    <input id="unitName" formControlName="unitName" />
+  </div>
+  <div>
+    <label for="groupId">Group ID</label>
+    <input id="groupId" formControlName="groupId" />
+  </div>
+  <div>
+    <label for="groupName">Group Name</label>
+    <input id="groupName" formControlName="groupName" />
+  </div>
+  <div>
+    <label for="lineId">Line ID</label>
+    <input id="lineId" formControlName="lineId" />
+  </div>
+  <div>
+    <label for="lineDesc">Line Description</label>
+    <input id="lineDesc" formControlName="lineDesc" />
+  </div>
+  <div>
+    <label for="partId">Part ID</label>
+    <input id="partId" formControlName="partId" />
+  </div>
+  <div>
+    <label for="partNo">Part Number</label>
+    <input id="partNo" formControlName="partNo" />
+  </div>
+  <div>
+    <label for="partDesc">Part Description</label>
+    <input id="partDesc" formControlName="partDesc" />
+  </div>
+  <div>
+    <button type="button" (click)="save()" [disabled]="!isSaveEnabled">Save</button>
+  </div>
+</form>

@@ -1,0 +1,64 @@
+/* CSS for Form Initialization Component */
+
+/* Maximize the main window */
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Set PART_MASTER window to normal size */
+.part-master-window {
+  width: auto;
+  height: auto;
+}
+
+/* Title styling for the main window */
+.main-window-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Styling for the SYSDATE field */
+.sysdate-field {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Styling for the SCREENNAME field */
+.screenname-field {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Styling for the MODE field */
+.mode-field {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Default cursor style */
+:host {
+  cursor: default;
+}
+
+/* Disabled SAVE button */
+.save-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Enabled fields */
+.enabled-field {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+/* Focus on UNIT_ID field */
+.unit-id-field:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}

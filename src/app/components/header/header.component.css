@@ -1,0 +1,20 @@
+/* Styling for the header component */
+
+/* System Date Styling */
+.system-date {
+  color: darkgreen;
+  font-weight: bold;
+}
+
+/* Screen Name Styling */
+.screen-name {
+  text-transform: uppercase;
+}
+
+/* Hint for Screen Name */
+.screen-name::after {
+  content: 'PRESS <RETURN> TO RUN NEW FORM <F6> TO RUN NEW FORM AND RETURN BACK';
+  display: block;
+  font-size: 0.8em;
+  color: gray;
+}

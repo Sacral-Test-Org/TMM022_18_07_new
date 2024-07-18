@@ -1,0 +1,46 @@
+/* General button styles */
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Save button styles */
+button.save {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Clear button styles */
+button.clear {
+  background-color: #f0ad4e;
+  color: white;
+}
+
+/* Edit button styles */
+button.edit {
+  background-color: #5bc0de;
+  color: white;
+}
+
+/* Exit button styles */
+button.exit {
+  background-color: #d9534f;
+  color: white;
+}
+
+/* Hover effects for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive design for buttons */
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

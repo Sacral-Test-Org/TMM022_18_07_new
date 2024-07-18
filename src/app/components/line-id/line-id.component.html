@@ -1,0 +1,27 @@
+<div>
+  <form>
+    <div>
+      <label for="lineId">Line ID:</label>
+      <input id="lineId" name="lineId" type="text" (dblclick)="onLineIdDoubleClick()" (click)="onLineIdClick()" />
+    </div>
+    <div>
+      <label for="lineDesc">Line Description:</label>
+      <input id="lineDesc" name="lineDesc" type="text" />
+    </div>
+    <div>
+      <label for="partId">Part ID:</label>
+      <input id="partId" name="partId" type="text" />
+    </div>
+    <div>
+      <label for="partNo">Part Number:</label>
+      <input id="partNo" name="partNo" type="text" />
+    </div>
+    <div>
+      <label for="partDesc">Part Description:</label>
+      <input id="partDesc" name="partDesc" type="text" />
+    </div>
+    <div>
+      <button type="button" (click)="onSave()">Save</button>
+    </div>
+  </form>
+</div>
